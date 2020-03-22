@@ -14,8 +14,7 @@ const DataArea = () => {
       { name: "Image", width: "10%", order: "descend" },
       { name: "name", width: "10%", order: "descend" },
       { name: "phone", width: "20%", order: "descend" },
-      { name: "email", width: "20%", order: "descend" },
-      { name: "dob", width: "10%", order: "descend" }
+      { name: "email", width: "20%", order: "descend" }
     ]
   });
 
@@ -42,8 +41,7 @@ const DataArea = () => {
         
         else if (heading === "name") {
           return a[heading].first.localeCompare(b[heading].first);
-        } else if (heading === "dob") {
-          return a[heading].age - b[heading].age;
+
         } else {
           return a[heading].localeCompare(b[heading]);
         }
@@ -57,9 +55,7 @@ const DataArea = () => {
         
         else if (heading === "name") {
           return b[heading].first.localeCompare(a[heading].first);
-        }else if (heading === "dob") {
-          return b[heading].age - a[heading].age;
-        }  else {
+        } else {
           return b[heading].localeCompare(a[heading]);
         }
       }
@@ -79,6 +75,7 @@ const DataArea = () => {
 
   const handleSearchChange = event => {
     const filter = event.target.value;
+    // eslint-disable-next-line
     const filteredList = developerState.users.filter(item => {
       let values = item.name.first.toLowerCase() + " " + item.name.last.toLowerCase();
       console.log(filter, values)
@@ -100,6 +97,7 @@ const DataArea = () => {
         filteredUsers: results.data.results
       });
     });
+    // eslint-disable-next-line
   }, []);
 
   return (

@@ -4,8 +4,8 @@ import "../styles/Header.css";
 function Header () {
     return (
       <div className="header">
-        <h1>Employee Directory</h1>
-        <p>Click on column headers to filter by heading or search for a name.</p>
+        <h1><img className="logo" alt="" src="/empdir.png"></img></h1>
+        <h5>Click on column headers to filter by heading or search for a name.</h5>
       </div>
     )
   }

@@ -13,13 +13,7 @@ const SearchName = () => {
               Search
             </span>
           </div>
-          <input
-          className="form-control mr-sm-2"
-          type="search"
-          placeholder="name"
-          aria-label="Search"
-          onChange={e => context.handleSearchChange(e)}
-        />
+          <input className="form-control mr-sm-2" type="search" placeholder="name" aria-label="Search" onChange={e => context.handleSearchChange(e)}/>
         </div>
     </div>
   );
