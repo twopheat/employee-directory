@@ -11,8 +11,7 @@ function Nav() {
 
       <div className="collapse navbar-collapse row" id="navbarNav">
             <ul className="navbar-nav mr-auto">
-
-    </ul>
+            </ul>
         <div class="col-2"></div>
         <div className="search-area col-4">
           <SearchName />

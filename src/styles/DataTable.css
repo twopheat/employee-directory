@@ -13,3 +13,6 @@
   content: "▼";
   margin-right: 0;
 }
+.mobiletable {
+  overflow: auto;
+}
