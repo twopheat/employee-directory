@@ -8,7 +8,7 @@ const DataTable = () => {
 
   return (
 
-    <div className="datatable mt-5 mobiletable">
+    <div className="datatable mt-3 col-md-12 mobiletable">
       <table
         id="table"
         className="table table-striped table-hover table-condensed"
